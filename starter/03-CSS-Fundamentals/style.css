@@ -220,6 +220,34 @@ h1::first-letter {
   margin-right: 5px;
 }
 
+h3 + p::first-line {
+  color: red;
+}
+
+::selection {
+  background-color: yellow;
+  color: black;
+}
+
+h1 {
+  position: relative;
+  /* background-color: orange; */
+}
+
+h1::after {
+  content: "Hello";
+  background-color: rgb(255, 255, 38);
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  left: 340px;
+  color: #444;
+}
+
 /* h3 + p::first-line {
   color: red;
 } */
